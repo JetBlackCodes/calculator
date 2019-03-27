@@ -1,0 +1,134 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  color: #222222;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 15px;
+}
+
+.corpus {
+  background: #fff;
+  border-style: solid;
+  border-color: DarkSeaGreen;
+  border-radius: 15px;
+  width: 400px;
+  height: 500px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+#out {
+  background: #fff;
+  width: 340px;
+  height: 50px;
+  margin-left: 30px;
+  margin-top: 30px;
+  border-style: solid;
+  border-color: DarkSeaGreen;
+  border-radius: 5px;
+  line-height: 2.5;
+
+}
+
+.row {
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 20px;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  padding-inline-start: 0px;
+  list-style-type: none;
+}
+
+.fcell {
+  background: #fff;
+  width: 60px;
+  height: 35px;
+  border-style: solid;
+  border-color: DarkSeaGreen;
+  border-radius: 5px;
+  flex-direction: row;
+  text-align: center;
+  line-height: 0;
+}
+
+.cell {
+  background: #fff;
+  width: 60px;
+  height: 60px;
+  border-style: solid;
+  border-color: DarkSeaGreen;
+  border-radius: 5px;
+  flex-direction: row;
+  text-align: center;
+}
+
+.fa {
+  width: 60px;
+  height: 35px;
+  line-height: 1;
+}
+
+button {
+  background: #fff;
+  width: 60px;
+  height: 60px;
+  border-style: solid;
+  border-color: DarkSeaGreen;
+  border-radius: 5px;
+
+  flex-direction: row;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 2;
+
+  text-decoration: none;
+  outline: none;
+  display: inline-block;
+
+  position: relative;
+  overflow: hidden;
+
+  color: #000;
+  transition: .2s ease-in-out;
+
+  margin: -2px -2px;
+  font-size: 20px;
+}
+
+
+
+button::before {
+
+  background: linear-gradient(90deg, rgba(255,255,255,.1), rgba(255,255,255,.5));
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  top: -8px;
+  left: -75px;
+  transform: skewX(-45deg);
+}
+
+button:hover {
+  background: #F5F9F5;
+}
+button:hover:before {
+  left: 150px;
+  transition: .5s ease-in-out;
+}
+
+button:active {
+  color: grey;
+  margin: -1px -2px;
+  font-size: 17px;
+  height: 62px;
+  width: 62px;
+  transition:  .02s ease-in-out;
+  }
+
+.fa:active {
+  height: 37px;
+  width: 61px;
+}
